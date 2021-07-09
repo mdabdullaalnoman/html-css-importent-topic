@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav bar</title>
+
+    <script
+      src="https://kit.fontawesome.com/db415453da.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="icon"
+      href="media/image/fav-incons-two.png"
+      type="image/png"
+      sizes="16x16"
+    />
+
+    <link rel="stylesheet" href="css/nav-bar.css" />
+  </head>
+  <body>
+    <header class="warp">
+      <div class="container">
+        <a href=""><img src="./media/image/nav-logo.png" alt="logo" /></a>
+
+        <div
+          onclick="myFunction()"
+          id="menu"
+          class="fas fa-align-center"
+          href=""
+        ></div>
+
+        <nav class="navbar">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Skill</a>
+          <a href="">Contract Us</a>
+          <a href="">Hire</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="body-img">
+      <img src="media/image/cat.jpg" alt="" />
+    </div>
+
+    <script>
+      function myFunction() {
+        let menu = document.querySelector("#menu");
+        var x = document.querySelector(".navbar");
+
+        menu.classList.toggle("fa-times");
+
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
